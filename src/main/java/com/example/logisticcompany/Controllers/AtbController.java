@@ -5,6 +5,7 @@ import java.util.ResourceBundle;
 
 import com.example.logisticcompany.MainLogisticCompany;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 
 public class AtbController {
@@ -37,6 +38,26 @@ public class AtbController {
     void initialize() {
         mainMenu.setOnAction(actionEvent -> {
             MainLogisticCompany.SwitchScene("hello-view.fxml",mainMenu);
+        });
+        showYourOrder.setOnAction(actionEvent -> {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION,"1");
+            alert.showAndWait();
+        });
+        showWhishes.setOnAction(actionEvent -> {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION,"1");
+            alert.showAndWait();
+        });
+        priceYourOrder.setOnAction(actionEvent -> {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION,"1");
+            alert.showAndWait();
+        });
+        deliveryTerm.setOnAction(actionEvent -> {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION,"1");
+            alert.showAndWait();
+        });
+        addWishes.setOnAction(actionEvent -> {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION,"1");
+            alert.showAndWait();
         });
     }
 

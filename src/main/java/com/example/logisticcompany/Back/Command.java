@@ -55,11 +55,10 @@ public class Command {
     }
 
 
-
     public void getpr(String f) {
-       country();
-            if (f == "German") {
-                HashSet ger = new HashSet<>(german);
+        country();
+        if (f == "German") {
+            HashSet ger = new HashSet<>(german);
             System.out.println(ger + "-1000x ");
 
         } else if (f == "British") {
@@ -119,6 +118,7 @@ public class Command {
         }
         System.out.println(n);
     }
+
     public void genereta() {
         Scanner sc = new Scanner(System.in);
         ArrayList<String> f2 = new ArrayList<>();
@@ -132,8 +132,9 @@ public class Command {
         System.out.println("Введіть назву країни, яку хочете додати");
         String s = br.nextLine();
         CountrySupplier fg = new CountrySupplier(s, 0, f2);
-        f=fg;
+        f = fg;
     }
+
     public void getTime(Integer n) {
         if (n == 1) {
             a.time(German);
@@ -153,17 +154,25 @@ public class Command {
             p.timeForClient(Italia);
         }
     }
+
     public void countryShowWish() {
         System.out.println(wish);
     }
+    StringBuilder stringBuilder;
     public void name() {
         System.out.println(German.getName());
         System.out.println(British.getName());
         System.out.println(Italia.getName());
-        if (f!=null){
+        stringBuilder.append(German.getName());
+        stringBuilder.append(British.getName());
+        stringBuilder.append(Italia.getName());
+        if (f != null) {
             System.out.println(f.getName());
         }
 
+    }
+    public String v(){
+return String.valueOf(stringBuilder);
     }
 
     //
