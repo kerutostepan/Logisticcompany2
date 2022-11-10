@@ -5,21 +5,25 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="720.0" style="-fx-background-color: #36454f;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.logisticcompany.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="720.0" style="-fx-background-color: #36454f;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.logisticcompany.Controllers.CustomerController">
     <children>
         <AnchorPane layoutY="73.0" prefHeight="430.0" prefWidth="720.0" style="-fx-background-color: #c0ffee;">
             <children>
-                <Button fx:id="LogisticCompany" layoutX="63.0" layoutY="355.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="170.0" style="-fx-background-color: black;" text="Logistic Compapy" textFill="#b52121">
+                <Button fx:id="eldorado" layoutX="275.0" layoutY="299.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="170.0" style="-fx-background-color: black;" text="ELDORADO" textFill="#b22222">
                     <font>
                         <Font name="Berlin Sans FB Demi Bold" size="18.0" />
                     </font>
                 </Button>
-                <Button fx:id="Customer" layoutX="498.0" layoutY="355.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="170.0" style="-fx-background-color: black;" text="Customer" textFill="#b22222">
-                    <font>
-                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
-                    </font>
-                </Button>
+            <Button fx:id="atb" layoutX="275.0" layoutY="164.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="170.0" style="-fx-background-color: black;" text="ATB" textFill="#b52121">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="eva" layoutX="275.0" layoutY="41.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="170.0" style="-fx-background-color: black;" text="EVA" textFill="#b52121">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Button>
             </children>
         </AnchorPane>
         <Label layoutX="253.0" layoutY="22.0" prefHeight="36.0" prefWidth="215.0" text="Choose your role" textAlignment="CENTER" textFill="#540e0e">

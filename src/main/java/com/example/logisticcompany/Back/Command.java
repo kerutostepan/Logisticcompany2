@@ -57,8 +57,8 @@ public class Command {
 
 
     public void getpr(String f) {
-       { country();
-            if (f == "German")
+       country();
+            if (f == "German") {
                 HashSet ger = new HashSet<>(german);
             System.out.println(ger + "-1000x ");
 

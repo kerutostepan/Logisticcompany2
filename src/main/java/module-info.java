@@ -5,4 +5,6 @@ module com.example.logisticcompany {
 
     opens com.example.logisticcompany to javafx.fxml;
     exports com.example.logisticcompany;
+    exports com.example.logisticcompany.Controllers;
+    opens com.example.logisticcompany.Controllers to javafx.fxml;
 }
